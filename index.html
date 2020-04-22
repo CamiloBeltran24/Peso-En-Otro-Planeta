@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Tu peso en otro planeta</title>
+</head>
+<body>
+  <header>
+    <h1>Tu Peso En Otros Planetas</h1>
+    <a href="">Al portafolio</a>
+  </header>
+  <div class="container">
+    <div class="principal">
+      <p><strong>Hola!</strong>, en esta pequeña aplicacion web podras conocer cual es tu peso en los diferentes planetas que comprenden nuestro sistema solar.</p>
+
+      <!-- Formulario de seleccion de planeta -->
+      <form action="">
+        <input type="text" placeholder="Ingrese su peso" id="peso_usuario" required="">
+
+        <select id="planeta" name="planet">
+          <option value="disabled selected">--Seleccione Planeta--</option>
+          <option value="marte">Marte</option>
+          <option value="jupiter">J&uacute;piter</option>
+          <option value="saturno">Saturno</option>
+          <option value="mercurio">Mercurio</option>
+          <option value="venus">Venus</option>
+          <option value="urano">Urano</option>
+          <option value="neptuno">Neptuno</option>
+          <option value="pluton">Plut&oacute;n</option>
+          <option value="luna">Luna</option>
+        </select>
+        <button type="button" name="button" id="boton" onclick="getPlanet()">Calcular</button>
+      </form>
+      <!-- Acaba Formulario de seleccion de planeta -->
+      <div id="resultado">
+        Aqui podras ver tu peso
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+</html>
